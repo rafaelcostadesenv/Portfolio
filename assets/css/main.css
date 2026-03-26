@@ -101,9 +101,12 @@ input, select, textarea {
 	body {
 		background-color: #2e3141;
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto, cover;
-		background-attachment: fixed, fixed;
-		background-position: center, center;
+		background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3464,8 +3467,10 @@ input, select, textarea {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-				background-size: auto, cover;
-				background-position: center, center;
+				background-size: auto,
+ cover;
+				background-position: center,
+ center;
 				margin-bottom: -6.5em;
 			}
 
@@ -3574,8 +3579,10 @@ input, select, textarea {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, 0% 30%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 30%;
 			margin-bottom: -6.5em;
 		}
 
@@ -3585,8 +3592,10 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 11em 3em 7.375em 3em ;
-			background-size: auto, cover;
-			background-position: center, 0% 0%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 0%;
 			margin-bottom: -4.75em;
 		}
 
@@ -3600,7 +3609,8 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 6.5em 2em 3em 2em ;
-			background-size: auto, 125%;
+			background-size: auto,
+ 125%;
 			margin-bottom: -2.5em;
 		}
 
@@ -4062,8 +4072,10 @@ input, select, textarea {
 		#footer {
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, center;
+			background-size: auto,
+ cover;
+			background-position: center,
+ center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
@@ -4142,3 +4154,258 @@ input, select, textarea {
 		}
 
 	}
+
+/* =========================================================
+   PORTFOLIO - Estilos Customizados
+   ========================================================= */
+
+/* --- Tech Badges --- */
+.tech-badges {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6em;
+	margin: 0 0 2em 0;
+}
+
+.badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4em;
+	padding: 0.32em 0.9em;
+	border-radius: 2em;
+	font-family: Raleway, Helvetica, sans-serif;
+	font-size: 0.68em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	border-bottom: 0 !important;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.badge:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.badge-java {
+	background: rgba(234, 107, 0, 0.12);
+	border: 1px solid rgba(234, 107, 0, 0.45);
+	color: #f5a623;
+}
+
+.badge-spring {
+	background: rgba(109, 179, 63, 0.12);
+	border: 1px solid rgba(109, 179, 63, 0.45);
+	color: #78c34a;
+}
+
+.badge-flutter {
+	background: rgba(84, 197, 248, 0.12);
+	border: 1px solid rgba(84, 197, 248, 0.45);
+	color: #54c5f8;
+}
+
+.badge-arduino {
+	background: rgba(0, 188, 212, 0.12);
+	border: 1px solid rgba(0, 188, 212, 0.45);
+	color: #00bcd4;
+}
+
+.badge-cpp {
+	background: rgba(129, 90, 194, 0.12);
+	border: 1px solid rgba(129, 90, 194, 0.45);
+	color: #a57ee8;
+}
+
+.badge-iot {
+	background: rgba(255, 193, 7, 0.12);
+	border: 1px solid rgba(255, 193, 7, 0.45);
+	color: #ffd54f;
+}
+
+/* --- Etiqueta de tipo do projeto --- */
+.projeto-tipo {
+	display: inline-block;
+	font-family: Raleway, Helvetica, sans-serif;
+	font-size: 0.68em;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #c680ff;
+	margin: 0 0 0.6em 0;
+	border-bottom: 0 !important;
+}
+
+.projeto-tipo.secundario {
+	color: #54c5f8;
+}
+
+/* --- Lista de funcionalidades --- */
+.feature-list {
+	list-style: none !important;
+	margin: 0 0 1.5em 0;
+	padding: 0;
+}
+
+.feature-list li {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.8em;
+	padding: 0.55em 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	font-size: 0.92em;
+	line-height: 1.55;
+}
+
+.feature-list li:last-child {
+	border-bottom: 0;
+}
+
+.feature-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.4em;
+	height: 1.4em;
+	flex-shrink: 0;
+	margin-top: 0.1em;
+	color: #c680ff;
+	font-size: 0.85em;
+}
+
+.projeto-secundario .feature-icon {
+	color: #54c5f8;
+}
+
+/* --- Botão CTA Destaque --- */
+.button.cta-demo {
+	background-color: #8a2be2 !important;
+	border-color: #8a2be2 !important;
+	color: #fff !important;
+	padding: 0.85em 2.2em;
+	font-size: 0.92em;
+	letter-spacing: 0.09em;
+	box-shadow: 0 4px 22px rgba(138, 43, 226, 0.38);
+	transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.button.cta-demo:hover {
+	background-color: #a041f5 !important;
+	border-color: #a041f5 !important;
+	transform: translateY(-3px);
+	box-shadow: 0 8px 30px rgba(138, 43, 226, 0.55);
+}
+
+/* --- Grupo de botões CTA --- */
+.cta-group {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	margin-top: 2.5em;
+	align-items: center;
+}
+
+/* --- Container de screenshot / placeholder --- */
+.screenshot-container {
+	border-radius: 12px;
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+.screenshot-container img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.screenshot-placeholder {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 255, 255, 0.03);
+	border: 2px dashed rgba(255, 255, 255, 0.12);
+	border-radius: 12px;
+	padding: 2em;
+}
+
+.placeholder-text {
+	color: rgba(255, 255, 255, 0.28);
+	font-size: 0.82em;
+	text-align: center;
+	line-height: 1.9;
+	border-bottom: 0 !important;
+}
+
+.placeholder-text small {
+	font-size: 0.85em;
+	opacity: 0.7;
+}
+
+/* --- Layout: Sistema de Estoque --- */
+.projeto-destaque .inner {
+	max-width: 74em;
+}
+
+.projeto-header {
+	margin-bottom: 0.25em;
+}
+
+.projeto-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4em;
+	align-items: start;
+	margin-top: 1.5em;
+}
+
+/* --- Layout: Projeto Arduino --- */
+.projeto-secundario .inner {
+	max-width: 74em;
+}
+
+.arduino-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4em;
+	align-items: center;
+}
+
+/* --- Responsivo --- */
+@media screen and (max-width: 980px) {
+
+	.projeto-content,
+	.arduino-content {
+		grid-template-columns: 1fr;
+		gap: 2.5em;
+	}
+
+	.projeto-screenshot {
+		order: -1;
+	}
+
+}
+
+@media screen and (max-width: 736px) {
+
+	.tech-badges {
+		gap: 0.4em;
+	}
+
+	.badge {
+		font-size: 0.6em;
+		padding: 0.28em 0.7em;
+	}
+
+	.cta-group {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.cta-group .button {
+		text-align: center;
+	}
+
+}
